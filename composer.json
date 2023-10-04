@@ -1,14 +1,8 @@
 {
-    "name": "weirdan/psalm-plugin-skeleton",
-    "description": "Template to create psalm-plugin projects from",
+    "name": "Sufir/psalm-badge-generator-plugin",
+    "description": "Generates badge by Psalm coverage result",
     "type": "psalm-plugin",
     "license": "MIT",
-    "authors": [
-        {
-            "name": "Bruce Weirdan",
-            "email": "weirdan@gmail.com"
-        }
-    ],
     "require": {
         "vimeo/psalm": "dev-master"
     },
@@ -22,19 +16,19 @@
     },
     "extra": {
         "psalm": {
-            "pluginClass": "Weirdan\\PsalmPluginSkeleton\\Plugin"
+            "pluginClass": "Sufir\\PsalmBadgeGenerator\\Plugin"
         }
     },
     "autoload": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\": [
+            "Sufir\\PsalmBadgeGenerator\\": [
                 "."
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Weirdan\\PsalmPluginSkeleton\\Tests\\": [
+            "Sufir\\PsalmBadgeGenerator\\Tests\\": [
                 "tests/_support",
                 "tests"
             ]
